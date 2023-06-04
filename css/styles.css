@@ -115,7 +115,6 @@ img {
   height: 4px;
   background-color: var(--pressed-state);
   border-radius: 2px;
-  margin: 0 auto;
 }
 
 .header-list-item {
