@@ -23,8 +23,8 @@
             <nav class="header-navigation">
                 <a class="header-link link" href="./index.html">Web<span class="header-logo">Studio</span></a>
                 <ul class="header-navigation-list list">
-                    <li class="header-navigation-list-item"><a href="./index.html"
-                            class="header-list-item link">Studio</a>
+                    <li class="header-navigation-list-item current-page"><a href="./index.html"
+                            class="header-list-item current-page-color link">Studio</a>
                     </li>
                     <li class="header-navigation-list-item"><a href="./portfolio.html"
                             class="header-list-item link">Portfolio</a></li>
@@ -48,7 +48,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="hero-button">Order Service</button>
+                <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!--Why are we-->
@@ -314,6 +314,15 @@
             </div>
         </div>
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" class="modal-button" data-modal-close><svg class="close-modal-icon" width="8"
+                    height="8">
+                    <use href="./images/icons.svg#icon-close-blackdrop"></use>
+                </svg></button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
