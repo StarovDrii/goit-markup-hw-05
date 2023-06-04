@@ -103,11 +103,15 @@ img {
 .header-navigation-list-item:last-child {
   margin-right: 0;
 }
-
+.current-page {
+  position: relative;
+}
 .current-page::after {
   content: '';
-  display: block;
-  width: 48px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
   height: 4px;
   background-color: var(--pressed-state);
   border-radius: 2px;
@@ -627,7 +631,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--modal-overlay);
-  transition: opacity var(--dur), visibility var(--dur);
+  transition: opacity var(--dur) var(--func), visibility var(--dur) var(--func);
 }
 .modal-window {
   width: 408px;
